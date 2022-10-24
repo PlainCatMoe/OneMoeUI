@@ -1,0 +1,9 @@
+.moe-tab{display:flex;flex-wrap:wrap}
+.moe-tab label.moe-tab-item{cursor:pointer;padding:10px 32px;position:relative;transition:background .3s;border-radius:5px}
+.moe-tab label.moe-tab-item:hover{background: rgba(163, 163, 163, 0.1)}
+.moe-tab .moe-tab-content{display:none;margin-top:10px;order:1;width:100%}
+.moe-tab input{display:none}
+.moe-tab input[type=radio].moe-tab-item:checked+label.moe-tab-item+.moe-tab-content{display:block}
+.moe-tab-item::before{position:absolute;bottom:2px;left:0;width:100%;height:2px;border-radius:2px;background-color:var(--moe-border-color);transition: all 0.2s cubic-bezier(0.72, -0.43, 0.29, 1.54);transform:scaleX(0);content:''}
+.moe-tab-item:hover::before,.moe-tab-item:checked+label::before{transform:scaleX(0.9)}
+.moe-tab-item:checked+label::before{background-color:var(--moe-theme-color)}

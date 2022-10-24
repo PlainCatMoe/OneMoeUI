@@ -1,0 +1,22 @@
+.moe-divider{background:var(--moe-border-color);height:2px;border:none;border-radius:5px;margin-bottom:15px;margin-top:15px}
+.moe-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--moe-border-radius);
+    border: 2px solid var(--moe-border-color);
+    line-height: 24px;
+    background: var(--moe-background-color);
+}
+.moe-card-header{position:relative;box-sizing:border-box;height:72px;padding:16px}
+.moe-title,.moe-subtitle{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.moe-subtitle{opacity:0.6}
+.moe-card-header-avatar{float:left;width:40px;height:40px;border-radius:50%}
+.moe-card-header .moe-title{margin-left:52px;font-size:16px}
+.moe-card-header .moe-subtitle{margin-left:52px;font-size:14px}
+.moe-card-content{position:relative;padding:16px;font-size:14px}
+.moe-card-content .moe-title{font-size:20px}
+.moe-card-content .moe-subtitle{font-size:14px}
+.moe-card-menu{position:absolute;top:10px;left:10px;z-index:1}
+.moe-card-media{position:relative}
+.moe-card-media iframe,.moe-card-media img,.moe-card-media video{display:block;width:100%;border-radius:var(--moe-border-radius)}
+.moe-card-menu .moe-btn{--moe-background-color:rgba(255,255,255,0.5);--moe-theme-layout-color-text:#000}

@@ -1,0 +1,23 @@
+.moe-grid-list{margin:0 -2px}
+.moe-grid-list [class*="moe-col"]{padding-right:2px;padding-left:2px}
+
+.moe-celllist {
+    border-radius: calc(var(--moe-border-radius) - 5px);
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    --moe-theme-layout-color-text: #fff;
+    border: 2px solid var(--moe-border-color);
+}
+
+.moe-celllist img,.moe-celllist iframe{display:block;width:100%}
+.moe-celllist-actions{position:absolute;right:0;bottom:0;left:0;display:flex;align-items:center;padding:16px;color:#fff;background:rgba(0,0,0,0.5);--moe-background-color:transparent}
+.moe-celllist-content{flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.moe-celllist .moe-title{overflow:hidden;text-overflow:ellipsis}
+.moe-celllist .moe-title .moe-icon{margin-right:8px}
+.moe-celllist .moe-subtitle{margin-top:4px;font-size:12px;overflow:hidden;text-overflow:ellipsis}
+.moe-celllist .moe-subtitle .moe-icon{margin-right:8px;font-size:18px}
+.moe-celllist-actions-top{top:0;bottom:auto}
+.moe-celllist-actions-transparent{background:transparent}
+.moe-celllist-actions-gradient{background:linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0))}
+.moe-celllist-actions-gradient.moe-celllist-actions-top{background:linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0))}

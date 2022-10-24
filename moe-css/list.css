@@ -1,0 +1,49 @@
+.moe-list {
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+}
+
+.moe-list .moe-list-item {
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    margin: 5px;
+    line-height: 20px;
+    border-radius: 0 var(--moe-border-radius) var(--moe-border-radius) 0;
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s cubic-bezier(0.98, 0.17, 0.14, 2.2);
+    border-left: 2px solid rgba(155, 155, 155, 0.5);
+    cursor: pointer
+}
+
+.moe-list .moe-list-item:hover {
+    background: rgba(155, 155, 155, 0.107);
+    border-left: 4px solid rgba(155, 155, 155, 0.5);
+}
+.moe-list .moe-list-item:active {
+    border-left: 3px solid rgba(155, 155, 155, 0.5);
+}
+
+.moe-list .moe-list-item::before {
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    height: 100%;
+    width: 2px;
+    background: var(--moe-theme-color);
+    transform: scaleY(0);
+    transition: all .3s cubic-bezier(0.98, 0.17, 0.27, 1.43),left .3s cubic-bezier(0.98, 0.17, 0.14, 2.2);
+    content: ''
+}
+
+.moe-list .moe-list-item:hover::before {
+    transform: scaleY(1);
+    left: -4px;
+    width: 4px;
+}
+.moe-list .moe-list-item:active::before {
+    width: 3px;
+    left: -3px;
+}

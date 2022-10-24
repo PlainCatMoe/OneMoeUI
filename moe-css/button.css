@@ -1,0 +1,25 @@
+.moe-btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 16px;
+    min-width: 88px;
+    outline: 0;
+    border: 2px solid var(--moe-border-color);
+    border-radius: var(--moe-border-radius);
+    background: var(--moe-background-color);
+    color: var(--moe-theme-layout-color-text);
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-family: sans-serif;
+    line-height: 36px;
+    cursor: pointer;
+    transition: border .3s, box-shadow .3s, outline .3s;
+}
+.moe-btn:hover{border-color:var(--moe-theme-color)}
+.moe-btn:active{border-color:var(--moe-border-color)}
+.moe-btn.moe-btn-dense{min-width:30px;border-radius:calc(var(--moe-border-radius) - 5px);line-height:30px}
+.moe-btn.moe-btn-icon{padding:0;height: 40px;min-width: auto;width: 40px;}
+.moe-btn.moe-fab-fixed{position:fixed;right:30px;bottom:20px;border-radius:calc(var(--moe-border-radius) - 5px);z-index:1919810;background:var(--moe-fabbackground-color);}
+.moe-btn.moe-color-theme{border:2px solid var(--moe-border-color)!important}

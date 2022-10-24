@@ -1,0 +1,4 @@
+.moe-typo table,.moe-table{/* overflow:hidden; */border-radius: 15px;line-height:30px;/* table-layout:fixed; */border-spacing:0;font-size:15px;border:2px solid var(--moe-border-color);width:100%;}
+.moe-typo th,.moe-table th,.moe-table thead td,.moe-typo thead td{text-align:left;background-color:#aaaaaa22;border-bottom:2px solid var(--moe-border-color);font-style:normal;margin:0}
+.moe-typo th,.moe-typo td,.moe-table td,.moe-table th{padding:5px 15px;font-weight:400 !important}
+.moe-typo tr:nth-child(even),.moe-table tr:nth-child(even){background-color:#aaaaaa22}

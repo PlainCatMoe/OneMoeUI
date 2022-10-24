@@ -1,0 +1,6 @@
+.moe-switch{line-height:36px;cursor:pointer}
+.moe-switch input{position:absolute;opacity:0}
+.moe-switch-icon{position:relative;display:inline-block;width:50px;height:30px;vertical-align:middle;background:var(--moe-background-color);border-radius:20px;border:2px solid var(--moe-border-color) !important;transition:all 0.3s}
+.moe-switch-icon::before{position:absolute;top:7.5px;left:7.5px;width:15px;height:15px;background-color:#FAFAFA;border-radius:20px;transition: all 0.3s cubic-bezier(1, -0.36, 0, 1.57);content:'';outline:2px solid var(--moe-border-color);}
+.moe-switch input[type="checkbox"]:checked+.moe-switch-icon{background-color:var(--moe-theme-color)}
+.moe-switch input[type="checkbox"]:checked+.moe-switch-icon::before{left:27.5px;background-color:#fff;outline-width:3px}
